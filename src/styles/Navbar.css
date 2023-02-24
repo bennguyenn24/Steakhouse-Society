@@ -1,15 +1,36 @@
 .Navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 10vh;
-    padding-inline: 4%;
-    background-color: rgb(150, 38, 38);
-    color:white; 
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 10vh;
+	padding-inline: 4%;
+	background-color: #101E22;
+	color: white;
+}
+
+.company-logo {
+    height: 100px;
+    border-radius: 12px;
 }
 
 .nav-links {
-    display: flex;
-    gap: 60px;
-    list-style: none;
+	display: flex;
+    justify-content: center;
+	gap: 60px;
+	list-style: none;
+    margin-right: 15%;
+}
+
+.cart-container {
+	position: relative;
+}
+
+.cart-count {
+    position: absolute;
+    top: -20px;
+    right: -12px;
+    background-color: rgb(17, 17, 17);
+    padding-inline: 6px;
+    border-radius: 50%;
+    font-size: .9rem;
 }

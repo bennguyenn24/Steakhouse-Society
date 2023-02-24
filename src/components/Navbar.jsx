@@ -1,12 +1,15 @@
-import "../styles/Navbar.css"
+import "../styles/Navbar.css";
+import { BsCart3 } from "react-icons/bs";
+import companyLogo from "../assets/companyLogo.png"
 
 const Navbar = () => {
 	return (
 		<nav className="Navbar">
 			{/* Logo */}
 			<section>
-				<h1>LOGO</h1>
+				<img className="company-logo" src={companyLogo} alt="" />
 			</section>
+
 			{/* Links */}
 			<ul className="nav-links">
 				<li>Steaks</li>
@@ -14,10 +17,12 @@ const Navbar = () => {
 				<li>Chicken & Pork</li>
 				<li>Seafood</li>
 			</ul>
+
 			{/* Cart */}
-      <section>
-        <span>CART</span>
-      </section>
+			<section className="cart-container">
+				<BsCart3 size={32} color="white" />
+				<span className="cart-count">6</span>
+			</section>
 		</nav>
 	);
 };
