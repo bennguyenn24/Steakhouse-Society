@@ -1,0 +1,15 @@
+.Navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    padding-inline: 4%;
+    background-color: rgb(150, 38, 38);
+    color:white; 
+}
+
+.nav-links {
+    display: flex;
+    gap: 60px;
+    list-style: none;
+}

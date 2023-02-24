@@ -1,12 +1,14 @@
+import "../styles/Navbar.css"
+
 const Navbar = () => {
 	return (
-		<nav>
+		<nav className="Navbar">
 			{/* Logo */}
 			<section>
 				<h1>LOGO</h1>
 			</section>
 			{/* Links */}
-			<ul>
+			<ul className="nav-links">
 				<li>Steaks</li>
 				<li>Meats</li>
 				<li>Chicken & Pork</li>
