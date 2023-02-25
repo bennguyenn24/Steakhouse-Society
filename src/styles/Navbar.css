@@ -21,6 +21,15 @@
     margin-right: 15%;
 }
 
+.nav-links a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    color: rgb(202, 11, 11);
+}
+
 .cart-container {
 	position: relative;
 }
