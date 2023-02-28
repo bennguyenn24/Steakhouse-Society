@@ -8,3 +8,13 @@
 	letter-spacing: 0.8px;
 }
 
+.pages-container h1 {
+	color: #2c4f58;
+	font-size: 65px;
+	letter-spacing: 2.8px;
+	display: flex;
+	justify-content: center;
+	margin: 60px;
+	box-shadow: rgba(0, 0, 0, 0.48) 0px 3px 8px;
+}
+

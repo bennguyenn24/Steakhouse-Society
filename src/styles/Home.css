@@ -1,0 +1,44 @@
+h2 {
+    color: #2c4f58;
+	font-size: 65px;
+	letter-spacing: 2.8px;
+	display: flex;
+	justify-content: center;
+	margin: 50px;
+}
+
+h3 {
+	color: #2c4f58;
+	font-size: 25px;
+	letter-spacing: 2.8px;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 5%;
+}
+
+.home-header-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.carousel .thumb img {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.carousel .slide img {
+    max-height: 100;  /* change this to whatever you want */
+    width: 50%;
+}
+
+h3 {
+	margin: 50px;
+	font-size: 35px;
+}
+
+p {
+	color: #2c4f58;
+	display: flex;
+	justify-content: center;
+}

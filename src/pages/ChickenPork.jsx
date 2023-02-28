@@ -1,6 +1,6 @@
 const ChickenPork = () => {
     return (
-        <h1>ChickenPork</h1>
+        <h1>Chicken & Pork</h1>
     )
 }
 

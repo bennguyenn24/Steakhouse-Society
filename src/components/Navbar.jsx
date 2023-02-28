@@ -1,31 +1,25 @@
 import "../styles/Navbar.css";
 import { BsCart3 } from "react-icons/bs";
 import companyLogo from "../assets/companyLogo.png";
+import { Link, useMatch, useResolvedPath } from "react-router-dom";
 
 const Navbar = () => {
 	return (
 		<nav className="Navbar">
 			{/* Logo */}
 			<section>
-				<a href="/">
+				<Link to="/home">
 					<img className="company-logo" src={companyLogo} alt="" />
-				</a>
+				</Link>
 			</section>
 
 			{/* Links */}
 			<ul className="nav-links">
-				<li>
-					<a href="/">Home</a>
-				</li>
-				<li>
-					<a href="/">Steaks</a>
-				</li>
-				<li>
-					<a href="/">Chicken & Pork</a>
-				</li>
-				<li>
-					<a href="/">Seafood</a>
-				</li>
+				<CustomLink to="home">Home</CustomLink>
+				<CustomLink to="steaks">Steaks</CustomLink>
+				<CustomLink to="chickenpork">Chicken & Pork</CustomLink>
+				<CustomLink to="seafood">Seafood</CustomLink>
+				<CustomLink to="seafood">Secret Meat 😏</CustomLink>
 			</ul>
 
 			{/* Cart */}
@@ -37,4 +31,15 @@ const Navbar = () => {
 	);
 };
 
+function CustomLink({ to, children, ...props }) {
+	const resolvedPath = useResolvedPath(to)
+	const isActive = useMatch({path: resolvedPath.pathname, end: true })
+	return (
+		<li className={isActive ? "active" : ""}>
+			<Link to={to} {...props}>
+				{children}
+			</Link>
+		</li>
+	);
+}
 export default Navbar;
