@@ -8,14 +8,14 @@ const Navbar = () => {
 		<nav className="Navbar">
 			{/* Logo */}
 			<section>
-				<Link to="/home">
+				<Link to="/">
 					<img className="company-logo" src={companyLogo} alt="" />
 				</Link>
 			</section>
 
 			{/* Links */}
 			<ul className="nav-links">
-				<CustomLink to="home">Home</CustomLink>
+				<CustomLink to="/">Home</CustomLink>
 				<CustomLink to="steaks">Steaks</CustomLink>
 				<CustomLink to="chickenpork">Chicken & Pork</CustomLink>
 				<CustomLink to="seafood">Seafood</CustomLink>
