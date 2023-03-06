@@ -4,7 +4,7 @@
 	align-items: center;
 	height: 10vh;
 	padding-inline: 4%;
-	background-color: #101E22;
+	background-image: linear-gradient(to right, #101e22 0%, #000000 100%);
 	color: white;
 }
 

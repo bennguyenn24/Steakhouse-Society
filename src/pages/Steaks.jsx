@@ -1,3 +1,4 @@
+import Footer from "../components/Footer";
 import ProductCard from "../components/ProductCard";
 import products from "../data/products"
 
@@ -10,6 +11,7 @@ const Steaks = () => {
 					<ProductCard key={product.id} product={product}/>
 				))}
 			</div>	
+            <Footer />
             </div>	
     )
 }
