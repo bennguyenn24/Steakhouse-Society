@@ -19,7 +19,6 @@ const Navbar = () => {
 				<CustomLink to="steaks">Steaks</CustomLink>
 				<CustomLink to="chickenpork">Chicken & Pork</CustomLink>
 				<CustomLink to="seafood">Seafood</CustomLink>
-				<CustomLink to="seafood">Secret Meat 😏</CustomLink>
 			</ul>
 
 			{/* Cart */}
