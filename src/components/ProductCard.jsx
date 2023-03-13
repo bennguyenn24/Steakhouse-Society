@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/ProductCard.css"
 
-const ProductCard = ({ product }) => {
+const ProductCard = ({ product, handleAddProduct }) => {
 	return (
 		<div className="wrapper">
 			<div className="product-img">
@@ -14,7 +14,7 @@ const ProductCard = ({ product }) => {
 				</div>
 				<div className="product-price-btn">
 					${product.price}
-					<button>Add to cart</button>
+					<button onClick={() => handleAddProduct()}>Add to cart</button>
 				</div>
 			</div>
 		</div>
