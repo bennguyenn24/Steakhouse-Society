@@ -2,7 +2,7 @@ import ribeyeImg from "../assets/productimg/ribeye.png";
 import japWagyuIMG from "../assets/productimg/ja5w.png";
 import belugaCaviar from "../assets/productimg/belugacaviar.png";
 import chicken from "../assets/productimg/chicken.jpg";
-import porkChops from "../assets/productimg/porkChops.png";
+import porkChops from "../assets/productimg/porkChops.jpg";
 
 const productsData = {
 	steaks: [
@@ -23,17 +23,19 @@ const productsData = {
 			price: 249,
 		},
 	],
-	chickenpork: [
+	chicken: [
 		{
 			id: 1,
 			img: chicken,
-			name: "Whole Seasoned Rotisserie Chicken",
+			name: "Whole Chicken",
 			description:
-			"Savor the taste of premium quality chicken with our selection of all-natural, antibiotic-free cuts, raised with care and attention to ensure the best flavor and texture. Experience the difference in flavor and tenderness with our high-quality, free-range chicken, sourced from trusted local farms and delivered fresh to your door.",
+				"Savor the taste of premium quality chicken with our selection of all-natural, antibiotic-free cuts, raised with care and attention to ensure the best flavor and texture. Experience the difference in flavor and tenderness with our high-quality, free-range chicken, sourced from trusted local farms and delivered fresh to your door.",
 			price: 29,
 		},
+	],
+	pork: [
 		{
-			id: 2,
+			id: 1,
 			img: porkChops,
 			name: "Pork Chops",
 			description:
