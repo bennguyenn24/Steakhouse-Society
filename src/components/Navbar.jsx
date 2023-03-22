@@ -2,8 +2,11 @@ import "../styles/Navbar.css";
 import { BsCart3 } from "react-icons/bs";
 import companyLogo from "../assets/companyLogo.png";
 import { Link, useMatch, useResolvedPath } from "react-router-dom";
+import { useCart } from "../contexts/CartContext";
 
 const Navbar = () => {
+	const {value: cart} = useCart();
+
 	return (
 		<nav className="Navbar">
 			{/* Logo */}
@@ -27,7 +30,7 @@ const Navbar = () => {
 				<Link to="cart">
 					<BsCart3 size={32} color="white" />
 				</Link>
-				<span className="cart-count">0</span>
+				<span className="cart-count">{cart.length}</span>
 			</section>
 		</nav>
 	);
