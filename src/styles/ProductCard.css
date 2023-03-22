@@ -20,6 +20,8 @@
 }
 
 .product-info {
+    display: flex;
+    flex-direction: column;
 	float: left;
 	width: 327px;
 	border-radius: 7px 0 0 7px;
@@ -44,6 +46,8 @@
 }
 
 .product-price-btn {
+    display: flex;
+    align-items: center;
 	height: 103px;
 	width: 327px;
 	margin-top: 17px;
@@ -66,7 +70,7 @@
     display: inline-block;
     height: 50px;
     width: 176px;
-    margin: 0 40px 0 16px;
+    margin: 0 16px 0 16px;
     box-sizing: border-box;
     border: transparent;
     border-radius: 60px;
@@ -83,4 +87,28 @@
 
   .product-price-btn button:hover {
     background-color: #408573;
+  }
+
+  .quantity-input {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+
+  .quantity-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-right: 8px;
+  }
+
+  .quantity-container label{
+    text-align: center;
+  }
+
+  .quantity-button {
+    width: 26px !important;
+    height: 26px !important;
+    margin-inline: 10px !important;
   }
